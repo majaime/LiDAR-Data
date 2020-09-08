@@ -5,8 +5,8 @@ import numpy as np
 import csv
 
 # Reading data #
-inputPath = 'PATH_TO_YOUR_INPUT_BIN_FILE'
-outputPath = 'WHERE_YOU_WANT_TO_SAVE_YOUR_OUTPUT/FILENAME.CSV'
+inputPath = 'PATH_TO_YOUR_INPUT_BIN_FILE/filename.bin'
+outputPath = 'WHERE_YOU_WANT_TO_SAVE_YOUR_OUTPUT/filename.csv'
 
 num = np.fromfile(inputPath, dtype='float32', count=-1, sep='', offset=0)
 new = np.asarray(num).reshape(-1, 4)
